@@ -29,6 +29,10 @@ layout: default
         <a href="https://www.youtube.com/{{ site.youtube_username }}" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-youtube"></i></a>
         {% endif %}
+        {% if site.instagram_username %}
+        <a href="https://www.instagram.com/{{ site.instagram_username }}" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-instagram"></i></a>
+        {% endif %}
         {% if site.email %}
         <a href="mailto:{{ site.email }}">
           <i class="fas fa-envelope"></i>
