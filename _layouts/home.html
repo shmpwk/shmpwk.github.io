@@ -9,6 +9,10 @@ layout: default
     </div>
     <div class="profile-info">
       <div class="social-links">
+        {% if site.google_scholar_id %}
+        <a href="https://scholar.google.com/citations?user={{ site.google_scholar_id }}" target="_blank" rel="noopener noreferrer">
+          <i class="ai ai-google-scholar"></i></a>
+        {% endif %}
         {% if site.github_username %}
         <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-github"></i></a>
