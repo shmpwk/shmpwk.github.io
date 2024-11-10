@@ -2,7 +2,7 @@
 layout: home
 ---
 
-Wakabayashi Shumpei is a robotics software engineer at [TIER IV](https://tier4.jp/en/).  
+Shumpei Wakabayashi(若林隼平) is a robotics software engineer at [TIER IV](https://tier4.jp/en/).  
 His interests are cognitive learning and robot system integration.
 
 ## Career
