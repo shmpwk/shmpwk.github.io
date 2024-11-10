@@ -11,7 +11,8 @@ authors:
   - name: Kei Okada
   - name: Masayuki Inaba
 affiliation: JSK Robotics Laboratory, The University of Tokyo, Japan
-paper_url: "https://arxiv.org/abs/2408.09360"
+paper_url: "https://www.tandfonline.com/doi/abs/10.1080/01691864.2024.2379393" 
+arxiv_url: "https://arxiv.org/abs/2408.09360"
 video_url: "https://youtu.be/db4OcVsz3YY?si=n_huevCWTMdhP1Ry"
 ---
 
