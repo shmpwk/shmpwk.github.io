@@ -1,0 +1,18 @@
+title: Shumpei Wakabayashi
+profile_image: /assets/images/facephoto.JPG
+github_username: shmpwk
+linkedin_username: shumpei-wakabayashi
+twitter_username: picckachu
+youtube_username: \@shumpei.wakabayashi
+email: wakabayashi@jsk.imi.i.u-tokyo.ac.jp
+plugins:
+  - jekyll-feed
+header_pages:
+  - about.md
+  - publications.md
+  - project.md
+theme: minima
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/

@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<div class="home">
+  <div class="profile-section">
+    <div class="profile-image">
+      <img src="{{ site.profile_image | relative_url }}" alt="{{ site.title }}">
+    </div>
+    <div class="profile-info">
+      <div class="social-links">
+        {% if site.github_username %}
+        <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i></a>
+        {% endif %}
+        {% if site.linkedin_username %}
+        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin"></i></a>
+        {% endif %}
+        {% if site.twitter_username %}
+        <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-twitter"></i></a>
+        {% endif %}
+        {% if site.youtube_username %}
+        <a href="https://www.youtube.com/{{ site.youtube_username }}" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-youtube"></i></a>
+        {% endif %}
+        {% if site.email %}
+        <a href="mailto:{{ site.email }}">
+          <i class="fas fa-envelope"></i>
+        </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    {{ content }}
+  </div>
+</div>
+
+

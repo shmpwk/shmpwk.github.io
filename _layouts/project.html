@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<div class="project-page">
+  <header class="project-header">
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}
+    <h2 class="project-subtitle">{{ page.subtitle }}</h2>
+    {% endif %}
+    
+    {% if page.journal %}
+    <div class="journal">{{ page.journal }}</div>
+    {% endif %}
+  </header>
+
+  <div class="authors">
+    {% for author in page.authors %}
+      <a href="{{ author.url }}" {% if author.is_self %}class="self"{% endif %}>{{ author.name }}</a>{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  </div>
+
+  <div class="affiliation">
+    {{ page.affiliation }}
+  </div>
+
+  <div class="project-links">
+    {% if page.paper_url %}
+    <a href="{{ page.paper_url }}" class="button">Paper</a>
+    {% endif %}
+    {% if page.video_url %}
+    <a href="{{ page.video_url }}" class="button">Video</a>
+    {% endif %}
+  </div>
+
+  <div class="project-content">
+    {{ content }}
+  </div>
+</div>

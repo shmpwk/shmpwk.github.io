@@ -1,0 +1,320 @@
+---
+---
+@import "{{ site.theme }}";
+
+.site-title, .site-title:visited, a.site-title, a.site-title:visited {
+  color: #333 !important;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.site-title:hover, a.site-title:hover {
+  text-decoration: none;
+  color: #333 !important;
+}
+
+.site-header {
+  border-top: none;
+  border-bottom: 1px solid #e8e8e8;
+  min-height: 55.95px;
+  position: relative;
+}
+
+.site-title {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 54px;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+}
+
+.site-nav {
+  float: right;
+  line-height: 54px;
+
+  .nav-trigger {
+    display: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .page-link {
+    color: #333;
+    font-weight: bold;
+    line-height: 1.5;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.home {
+  .profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 30px;
+  }
+
+  .profile-image {
+    width: 150px;
+    min-width: 150px;
+    height: 150px;
+    margin-right: 30px;
+    margin-top: 50px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+
+  .profile-info {
+    flex: 1;
+  }
+
+  .social-links {
+    margin-top: 15px;
+
+    a {
+      margin-right: 10px;
+      font-size: 24px;
+      color: #828282;
+
+      &:hover {
+        color: #424242;
+      }
+    }
+  }
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.project-card {
+  display: block; /* リンクをブロック要素に */
+  text-decoration: none; /* 下線を削除 */
+  color: inherit; /* デフォルトの文字色を継承 */
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-decoration: none; /* ホバー時も下線なし */
+}
+
+.project-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 15px;
+}
+
+.project-info h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.1em;
+  line-height: 1.4;
+  color: #333;
+}
+
+.project-info p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.project-info .venue {
+  color: #333;
+  margin-top: 10px;
+}
+
+.project-info strong {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.project-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project-header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-subtitle {
+  font-size: 1.5em;
+  color: #666;
+  font-weight: normal;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.journal {
+  color: #b71c1c;
+  font-size: 1.2em;
+  margin: 15px 0;
+}
+
+.authors {
+  text-align: center;
+  margin: 20px 0;
+
+  a {
+    color: #2196F3;
+    text-decoration: none;
+
+    &.self {
+      font-weight: bold;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.affiliation {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.project-links {
+  text-align: center;
+  margin: 20px 0;
+
+  .button {
+    display: inline-block;
+    padding: 8px 20px;
+    margin: 0 10px;
+    background-color: #f5f5f5;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: #e0e0e0;
+    }
+  }
+}
+
+.project-content {
+  line-height: 1.6;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+}
+
+
+```scss
+.experiment-section {
+  margin: 30px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.experiment-section video,
+.experiment-section img {
+  width: 100%;
+  height: auto;
+}
+
+.state-recognition {
+  border: 1px solid #eee;
+}
+
+/* モバイル対応 */
+@media (max-width: 600px) {
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+
+  .profile-image {
+    width: 200px; /* モバイルでの画像サイズを大きく */
+    min-width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-links {
+    justify-content: center; /* アイコンを中央寄せ */
+  }
+  .experiment-section {
+    grid-template-columns: 1fr;
+  }
+}
+/* さらに小さい画面向け */
+@media screen and (max-width: 400px) {
+  .profile-image {
+    width: 150px;
+    min-width: 150px;
+    height: 150px;
+  }
+}
+
+/* Bibtexのスタイル */
+pre {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+/* 数式のサブスクリプト */
+sub {
+  font-size: 0.8em;
+}
